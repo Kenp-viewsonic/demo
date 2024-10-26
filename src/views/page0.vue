@@ -14,7 +14,7 @@
     </el-menu> -->
     <p></p>
     <el-row>
-      <el-col :span="24"><h2>献礼华诞</h2></el-col>
+      <el-col :span="24"><h2 class="head2">献礼华诞</h2></el-col>
     </el-row>
     <el-row gutter="20" justify="space-evenly">
       <el-col :span="11">
@@ -72,7 +72,14 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.head2{
+  background: linear-gradient(90deg, #F83600 0%, #FFF2B8 59.58%, #FFFFFF 100%);
+  padding-left: 3px;
+  padding-top: 3px;
+  padding-bottom: 4px;
+  color: #FFFFFF;
+}
 .wholepage {
   max-width: 100%;
   height: 100%;
