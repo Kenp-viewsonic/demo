@@ -42,7 +42,7 @@ export default {
     padding: 10px;
     text-align: center;
     font-size: 14px;
-    max-width: 80px;
+    width: 60px;
 }
 
 .day {

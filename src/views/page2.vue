@@ -25,7 +25,7 @@
                     总体来看，新中国成立75年来，计算机技术的发展是中国科技事业进步的一个缩影，它不仅体现了国家对科技创新的重视，也展示了中国科技工作者的不懈努力和创新精神。随着技术的不断发展，计算机将更加智能化、人性化，更好地服务于人类社会的各个领域。
                 </p>
                 <h1 class="head2">计算机技术创新历史节点</h1>
-                <ul>
+                <ul style="list-style-type: none; padding-left: 0;">
                     <li v-for="(node,i) in nodeList" v-bind:key="i"><HistoryNode :year="node.year" :month="node.month" :title="node.title"></HistoryNode></li>
                 </ul>
             </div>

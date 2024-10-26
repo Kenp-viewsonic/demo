@@ -77,8 +77,11 @@
                 src="https://vodpub6.v.news.cn/yqfbzx-original/20241023/202410235ba25aa7633843e196276a50287aca3c_XxjfceC007092_20241023_CBVFN0A001.mp4"></video>
             </el-aside>
             <el-main class="tBWrap">
-              <h3 style="margin: 0px 0px 5px 0px;">“中国天眼”：极目星空 竞逐未来</h3>
-              <p>来源：新华网</p>
+              <div class="titleBrief">
+                <h3 style="margin: 0px 0px 5px 0px;">“中国天眼”：极目星空 竞逐未来</h3>
+                <p>来源：新华网</p>
+              </div>
+
             </el-main>
           </el-container>
         </a>
@@ -88,8 +91,11 @@
                 :src="require('D:/fstkdev/KenpFrontEndDev/demo/src/assets/火车.png')"
                 alt="工业经济跨越式增长，制造强国建设步伐坚定"></el-aside>
             <el-main class="tBWrap">
-              <h3 style="margin: 0px 0px 5px 0px;">雪域天路新征途</h3>
-              <p>来源：新华网</p>
+              <div class="titleBrief">
+                <h3 style="margin: 0px 0px 5px 0px;">雪域天路新征途</h3>
+                <p>来源：新华网</p>
+              </div>
+
             </el-main>
           </el-container>
         </a>
