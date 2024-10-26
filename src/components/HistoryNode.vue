@@ -3,8 +3,8 @@
     <a :href="hypRef" id="Wrapper">
         <div class="card">
             <div class="date">
-                <div class="day">{{day}}</div>
-                <span class="month">{{ year }}.{{month}}</span>
+                <span class="day">{{ year }}</span>
+                <div class="month">{{ month }}月</div>
             </div>
 
             <div class="content" >
@@ -17,13 +17,11 @@
 
 <script>
 export default {
-    name: 'ThemeHref',
+    name: 'HistoryNode',
     props: {
-        day: String,
         month: String,
         year: String,
-        hypRef: String,
-        title: String,
+        title: String
     }
 }
 </script>
@@ -31,15 +29,15 @@ export default {
 <style scoped>
 .card {
     display: flex;
-    border: 1px solid #dcdfe6;
-    border-radius: 4px;
+    border: 1.5px solid #dfe2e9;
+    border-radius: 8px;
     overflow: hidden;
     font-family: Arial, sans-serif;
     margin: 0px;
 }
 
 .date {
-    background-color: #c03e3e;
+    background: linear-gradient(90deg,#F83600 0%,#F9D423 100%); 
     color: white;
     padding: 10px;
     text-align: center;
@@ -59,18 +57,22 @@ export default {
 .content {
     flex-grow: 1;
     max-width: 80%;
-    height: 64px;
+    height: 70px;
+    position: relative;
 }
 
 .title {
-    margin-top: 20px;
-    margin-left: 5px;
-    margin-bottom: auto;
-    max-width: 80%;
+    position: absolute;
+    top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        margin: auto;
+        padding: 10px;
     font-size: 18px;
-    font-weight: bold;
+    line-height: 1.25;
     color: #333;
-    white-space: nowrap; /* 确保文本在一行内显示 */
+    white-space: break-spaces; /* 确保文本在一行内显示 */
   overflow: hidden; /* 隐藏溢出的文本 */
   text-overflow: ellipsis; /* 使用省略号表示溢出的文本 */
 }

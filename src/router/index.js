@@ -4,6 +4,10 @@ import PageFirst from '../views/page1.vue';
 import PageSecond from '../views/page2.vue';
 const routes = [
   {
+    path: '/',
+    redirect:'/pagez'    
+  },
+  {
     path: '/pagez',
     name: 'Pagez',
     component: PageZ
