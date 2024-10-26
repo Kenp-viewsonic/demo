@@ -7,6 +7,7 @@ import 'element-plus/dist/index.css' //导入 ElementPlus 组件库所需的全�
 import App from './App.vue'
 import router from './router'
 
+
 const app = createApp(App)
 app.use(ElementPlus) //将 ElementPlus 插件注册到 Vue 应用中
 app.use(router)
